@@ -7,10 +7,14 @@ Your readme should include the following information. Each student needs to subm
 Group Member Name(s):
 
 Other collaborators you worked with, including TAs (and feel free to give a shoutout to anyone who was particularly helpful):
+TAs: Lan and Zhirou
 
 Any references used besides JavaDoc and course materials:
+https://www.geeksforgeeks.org/stack-peek-method-in-java/ used this to understadn how to use peek() on stack in Infix.java
 
 Reflection on your experience with this assignment:
+
+This assignment was a little confusing at first in terms of understanding how the stack and queue worked together but after throughly going through the instructions and looking at examples, it was much easier to understand how Infix.java worked.
 
 This assignment does lend itself to more visual prototyping, so please feel free to go this route. Are you including slides, pseudocode, comments, or something else?
 
