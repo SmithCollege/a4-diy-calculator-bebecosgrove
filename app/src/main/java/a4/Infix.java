@@ -16,14 +16,14 @@ public class Infix {
         int num = tokens.size();
         HashMap<Character, Integer> operator_precedence = new HashMap<>(); // creates precedence values for different operators
 
-        // operator_precedence.put('(', 5);
+        // sets operators to different precedence values
         operator_precedence.put('^', 4);
         operator_precedence.put('*', 3);
         operator_precedence.put('/', 3);
         operator_precedence.put('+', 2);
         operator_precedence.put('-', 2);
 
-
+        //loops through each element in tokens
         for (int i = 0; i < num; i++) {
             if (tokens.getFirst() instanceof Double){
                 queue.addLast((Double) tokens.getFirst()); // pushes token onto end of queue if it is number
@@ -41,7 +41,7 @@ public class Infix {
                     queue.add(operator); // pushes popped onto queue
                 }
                 if (stack.size() < 1){ // if stack is empty without finding left parentheses
-                    System.out.println("Mismatched parenthesis2");
+                    System.out.println("Mismatched parenthesis");
                 }
                 else if ((Character) stack.peek() == '('){
                     stack.pop(); // pop left parentheses from stack
@@ -60,7 +60,7 @@ public class Infix {
             }
             while (stack.size() > 0){
                 if ((Character) stack.peek() == '(' || (Character) stack.peek() == ')'){
-                    System.out.println("Mismatched parentheses1");
+                    System.out.println("Mismatched parentheses");
                 }
                 else if (stack.peek() instanceof Character){
                     Object operator = stack.pop();
