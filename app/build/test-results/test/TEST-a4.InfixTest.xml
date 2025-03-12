@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="a4.InfixTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2025-03-12T21:46:53" hostname="Bebes-MacBook-Air.local" time="0.047">
+<testsuite name="a4.InfixTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2025-03-12T23:18:25" hostname="Bebes-MacBook-Air.local" time="0.048">
   <properties/>
   <testcase name="testInfixThrowsException" classname="a4.InfixTest" time="0.005"/>
   <testcase name="testExponent" classname="a4.InfixTest" time="0.004">
@@ -49,7 +49,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testParen" classname="a4.InfixTest" time="0.024"/>
+  <testcase name="testParen" classname="a4.InfixTest" time="0.025"/>
   <testcase name="testSimple" classname="a4.InfixTest" time="0.012"/>
   <testcase name="testSingle" classname="a4.InfixTest" time="0.001"/>
   <system-out><![CDATA[4.0
