@@ -9,7 +9,7 @@ class Main {
    */
   public static void main(String[] args) {
     // ArrayDeque<Object> tokens = Tokenizer.readTokens("28 1 4 / *");
-    ArrayDeque<Object> infix = Tokenizer.readTokens("(3.5*4)*0.5");
+    ArrayDeque<Object> infix = Tokenizer.readTokens("(3+1)^(5-3)");
     System.out.println(Infix.infixToPostfix(infix));
     // System.out.println(Tokenizer.readTokens("28 1 4 / *"));
     // System.out.println(Postfix.postfix(tokens));

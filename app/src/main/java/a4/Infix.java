@@ -16,7 +16,7 @@ public class Infix {
         int num = tokens.size();
         HashMap<Character, Integer> operator_precedence = new HashMap<>(); // creates precedence values for different operators
 
-        operator_precedence.put('(', 5);
+        // operator_precedence.put('(', 5);
         operator_precedence.put('^', 4);
         operator_precedence.put('*', 3);
         operator_precedence.put('/', 3);
@@ -48,15 +48,15 @@ public class Infix {
                 }
                 tokens.removeFirst();
                 }
-            else if ((Character) tokens.getFirst() == '^' ||  (Character) tokens.getFirst() == '*' || (Character) tokens.getFirst() == '/' || (Character) tokens.getFirst() == '+' || (Character) tokens.getFirst() == '-'){
-                while (stack.peek() instanceof Character && operator_precedence.get(stack.peek()) >= operator_precedence.get(tokens.getFirst())){
+            else if (((Character) tokens.getFirst() == '*' || (Character) tokens.getFirst() == '/' || (Character) tokens.getFirst() == '+' || (Character) tokens.getFirst() == '-')){
+                while (stack.peek() instanceof Character && (Character) stack.peek() != '(' && operator_precedence.get(stack.peek()) >= operator_precedence.get(tokens.getFirst())){
                     Object stack_operator = stack.pop(); // pops last element on stack
                     queue.addLast(stack_operator); 
                 }
                 stack.push(tokens.getFirst());
                 tokens.removeFirst();
-                }
-            
+            }
+             
             }
             while (stack.size() > 0){
                 if ((Character) stack.peek() == '(' || (Character) stack.peek() == ')'){
